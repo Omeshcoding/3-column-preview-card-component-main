@@ -16,8 +16,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Omeshcoding/3-column-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://omeshcoding.github.io/3-column-preview-card-component-main/)
+- Solution URL: [solution](https://github.com/Omeshcoding/3-column-preview-card-component-main)
+- Live Site URL: [Live site](https://omeshcoding.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
@@ -35,4 +35,4 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 - Website - [Umesh Sharma](https://www.your-site.com)
 - Frontend Mentor - [@Omeshcoding](https://www.frontendmentor.io/profile/Omeshcoding)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@@Omesha_Sh](https://twitter.com/Omesha_Sh)
