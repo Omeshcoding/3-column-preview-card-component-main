@@ -1,102 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
 
+  /* ### Neutral */
+  /* (paragraphs) */
+  --white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
 
-:root{
-    --Bright-orange: hsl(31, 77%, 52%);
-    --Dark-cyan: hsl(184, 100%, 22%);
---Very-dark-cyan: hsl(179, 100%, 13%);
-
-/* ### Neutral */
-/* (paragraphs) */
---white : hsla(0, 0%, 100%, 0.75);
-/* (background, headings, buttons) */
---Very-light-gray: hsl(0, 0%, 95%);}
-
-body{
-    margin:0;
-    padding:0;
-    font-size: 15px;
-    color:var(--white);
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--white);
 }
 /* Utility */
-h1{
-    font-size: 40px;
-    font-family: 'Big Shoulders Display', cursive;
-    letter-spacing:2px;
+h1 {
+  font-size: 40px;
+  font-family: 'Big Shoulders Display', cursive;
+  letter-spacing: 2px;
 }
-p{
-    width:80%;
-    margin:40px 0;
-    line-height: 1.8;
-    font-family: 'Lexend Deca', sans-serif;
+p {
+  width: 90%;
+  padding: 1.4rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-family: 'Lexend Deca', sans-serif;
 }
-.card-content{
-    display:flex;
-    flex-direction: row;    
-    margin:50px 150px ;
+.container {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
-.card{
-    width: 100%;
-   
-    background-color: green;
-    padding:2rem;
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: 50px 150px; */
 }
-.sedans{
-    background-color: var(--Bright-orange);
-    border-radius:10px 0 0 10px;
+.card {
+  width: 80%;
+
+  background-color: green;
+  padding: 2rem;
+}
+.sedans {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
 }
 
-.suvs{
-    background-color: var(--Dark-cyan);    
+.suvs {
+  background-color: var(--Dark-cyan);
 }
-.luxury{
-    background-color: var(--Very-dark-cyan);
-    border-radius:0px 10px 10px 0px;
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0px 10px 10px 0px;
 }
 /* Buttons */
-.btn{
-    padding:1rem 2rem;
-    border-radius: 40px;
-    border: none;
-    font-family: 'Lexend Deca', sans-serif;
-    margin-top:30px;
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  /* margin: 60px; */
 }
-.sedans .btn{
-    color:var(--Bright-orange);
+.sedans .btn {
+  color: var(--Bright-orange);
 }
-.sedans .btn:hover{
-        background-color:var(--Bright-orange);
-        color: #fff;
-        border: 2px solid #fff;
+.sedans .btn:hover {
+  background-color: var(--Bright-orange);
+  color: #fff;
+  border: 1px solid #fff;
 }
-.suvs .btn{
-    color:var(--Dark-cyan);
+.suvs .btn {
+  color: var(--Dark-cyan);
 }
-.suvs .btn:hover{
-    background-color:var(--Dark-cyan);
-    color: #fff;
-    border: 2px solid #fff;
+.suvs .btn:hover {
+  background-color: var(--Dark-cyan);
+  color: #fff;
+  border: 1px solid #fff;
 }
-.luxury .btn{
-    color:var(--Very-dark-cyan);
+.luxury .btn {
+  color: var(--Very-dark-cyan);
 }
-.luxury .btn:hover{
-    background-color:var(--Very-dark-cyan);
-    color: #fff;
-    border: 2px solid #fff;
+.luxury .btn:hover {
+  background-color: var(--Very-dark-cyan);
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-@media screen and (max-width:900px) {
-    .card-content{
-        display:flex;
-        flex-direction: column;    
-        margin:50px 150px;
-    }   
-    .sedans{
-        border-radius:10px 10px 0px 0px;
-    }
-    .luxury{
-        border-radius:0px 0px 10px 10px;
-    }
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+    height: auto;
+    /* margin: 0 20px; */
+  }
+  .card-content {
+    margin: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    /* margin: 50px 20px; */
+  }
+  .sedans {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .luxury {
+    border-radius: 0px 0px 10px 10px;
+  }
 }
